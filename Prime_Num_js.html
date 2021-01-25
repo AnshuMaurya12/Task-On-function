@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Check Prime or Not</title>
+</head>
+<body>
+
+  <form name="myform"> 
+    <label> the number:</label>
+     <input type="text" name=num value=""> 
+      
+    <br><br> 
+      
+    <input type="button" value="Check" onClick="primeNum()"> 
+    <br> 
+</form> 
+    <script>
+
+function primeNum()
+{
+   // Decleration
+              var num, i, chkPrime = true; 
+              //Assignment
+              num = document.myform.num.value; 
+              //logic
+              for(i = 2; i <= num - 1; i++) 
+                if (num % i == 0) { 
+                    chkPrime= false; 
+                    break; 
+                } 
+                  
+                // display  message 
+            if (chkPrime == true) 
+                alert(num + " is prime number "); 
+            else
+                alert(num + " is not prime number"); 
+        } 
+          
+    </script>
+</body>
+</html>

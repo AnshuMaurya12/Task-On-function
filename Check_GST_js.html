@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Check GST</title>
+
+</head>
+<body> 
+</body>
+
+<script>
+    function gstCalculation(gstPercentage=18)
+    {
+        debugger;
+        /*Declaration*/
+    let price, includingGstPrice;
+    /*Assignment*/
+    price = 500;
+    //gstPercentage= 18;
+    /*Calculation*/
+    includingGstPrice = price + (price*gstPercentage/100);
+   
+    /*Presentation */
+    document.write('<h3>'+includingGstPrice+'</h3>');
+
+    }
+    /* Calling Function*/
+    gstCalculation();
+</script>
+
+</html>

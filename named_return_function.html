@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Function 5 Types</title>
+</head>
+<div id="demo"></div>
+<body>
+    
+    <script>
+
+// named with return 
+function findMax() {
+  var i;
+  var max = -Infinity;
+  for(i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+} 
+document.getElementById("demo").innerHTML = findMax(4, 5, 6);
+
+
+   
+   </script>
+</body>
+</html>
